@@ -26,5 +26,5 @@
 
 ## 📸 Demo
 
-![App Demo](https://github.com/user-attachments/assets/b47f6492-5bb9-4214-a149-a53099b9136a)
+![App Demo](https://github.com/user-attachments/assets/8eb633f6-a46d-4c7f-b5f9-8f9224e879c3)
 
