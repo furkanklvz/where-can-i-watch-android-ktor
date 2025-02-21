@@ -1,38 +1,28 @@
 package com.klavs.wherecaniwatch.view
 
+import android.annotation.SuppressLint
 import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.padding
-import androidx.compose.material3.ExperimentalMaterial3Api
-import androidx.compose.material3.ExperimentalMaterial3ExpressiveApi
-import androidx.compose.material3.FlexibleBottomAppBar
-import androidx.compose.material3.Icon
-import androidx.compose.material3.NavigationBarItem
 import androidx.compose.material3.Scaffold
 import androidx.compose.runtime.Composable
-import androidx.compose.runtime.getValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import androidx.navigation.NavDestination.Companion.hasRoute
-import androidx.navigation.NavDestination.Companion.hierarchy
-import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
-import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
-import com.klavs.wherecaniwatch.data.entities.BottomBarItem
 import com.klavs.wherecaniwatch.data.entities.Routes
 import com.klavs.wherecaniwatch.viewmodel.HomeViewModel
 import org.koin.androidx.compose.koinViewModel
 
+@SuppressLint("UnusedMaterial3ScaffoldPaddingParameter")
 @Composable
 fun Navigation() {
     val navController = rememberNavController()
     Scaffold(
-        bottomBar = { BottomBar(navController) },
+        //bottomBar = { BottomBar(navController) },
         modifier = Modifier.fillMaxSize()
-    ) { innerPadding ->
+    ) { //innerPadding ->
         NavHost(
-            modifier = Modifier.padding(bottom = innerPadding.calculateBottomPadding()),
+            //modifier = Modifier.padding(bottom = innerPadding.calculateBottomPadding()),
             startDestination = Routes.Home,
             navController = navController
         ) {
@@ -54,7 +44,7 @@ private inline fun <reified T: ViewModel> NavBackStackEntry.sharedViewModel(navC
     return koinViewModel(viewModelStoreOwner = backStackEntry)
 }*/
 
-@OptIn(ExperimentalMaterial3ExpressiveApi::class, ExperimentalMaterial3Api::class)
+/*@OptIn(ExperimentalMaterial3ExpressiveApi::class, ExperimentalMaterial3Api::class)
 @Composable
 private fun BottomBar(navController: NavHostController) {
     val currentBackStackEntry by navController.currentBackStackEntryAsState()
@@ -79,7 +69,7 @@ private fun BottomBar(navController: NavHostController) {
             )
         }
     }
-}
+}*/
 
 @Preview
 @Composable
