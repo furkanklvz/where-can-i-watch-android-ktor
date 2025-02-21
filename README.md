@@ -24,6 +24,10 @@
 
 ---
 
+## 📸 Used API
+- [Streaming Availability](https://rapidapi.com/movie-of-the-night-movie-of-the-night-default/api/streaming-availability)
+---
+
 ## 📸 Demo
 
 ![App Demo](https://github.com/user-attachments/assets/8eb633f6-a46d-4c7f-b5f9-8f9224e879c3)
